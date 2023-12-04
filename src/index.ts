@@ -32,7 +32,8 @@ if (RANDOM_SETTINGS) {
     });
 
     Canvas.initialize().then(h => {
-        const C = 500;
+        const options = new URL(location.href).searchParams;
+        const C = Number.parseInt(options.get("count") || "500") || 500;
     
         const l = [
             particle(C, Color.RED),
