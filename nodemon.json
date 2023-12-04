@@ -1,0 +1,5 @@
+{
+    "ignore": ["**/dist/**"],
+    "ext": "*.ts",
+    "exec": "make || exit 1"
+  }
